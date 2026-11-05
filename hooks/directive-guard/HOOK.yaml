@@ -1,0 +1,6 @@
+name: directive-guard
+description: Self-heal OPERATOR DIRECTIVE v3.3 layers on gateway/session events
+events:
+  - gateway:startup
+  - session:start
+  - session:compress

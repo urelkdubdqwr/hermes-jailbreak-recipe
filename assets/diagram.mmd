@@ -1,0 +1,31 @@
+flowchart TB
+  M["DIRECTIVE.master.md<br/>one source of truth"]
+  subgraph CON["Constitution files (L1-L4)"]
+    S1["SOUL.md head - L1"]
+    S2["SOUL.md tail - L2<br/>anti-truncation net"]
+    C3[".hermes.md - L3"]
+    C4["AGENTS.md - L4<br/>shadowed: first-match-wins"]
+  end
+  subgraph PRIM["Agent primitives (L5-L7)"]
+    M5["MEMORY.md - L5"]
+    M6["USER.md - L6"]
+    K7["skill index desc - L7"]
+  end
+  subgraph LIVE["Per-call injection (L8-L9)"]
+    H8["pre_llm_call hook<br/>inject context every call"]
+    H9["gateway hook<br/>startup / session:start / compress"]
+  end
+  G10["directive_guard.sh - L10<br/>audit + heal from snapshot"]
+  SNAP["known-good snapshot<br/>directives/.bak/"]
+  PROBE["token probe in a fresh process<br/>L1 L2 L3 L5 L6 L8 confirmed"]
+  M --> CON
+  M --> PRIM
+  M --> LIVE
+  H9 --> G10
+  G10 --> SNAP
+  SNAP --> CON
+  G10 --> PROBE
+  classDef dark fill:#1F1B16,stroke:#D97706,color:#F6F3EC
+  classDef acc fill:#F6F3EC,stroke:#D97706,color:#1F1B16
+  class M,H8,H9,G10 dark
+  class SNAP,PROBE acc
