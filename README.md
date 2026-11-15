@@ -1,3 +1,27 @@
+# hermes-jailbreak-recipe
+
+10-layer prompt control for a self-hosted Hermes Agent: self-healing guard, measured limits.
+
+**Run**
+```bash
+# lihat file di repo ini
+```
+
+**Stack** · —
+
+## Details
+
+10-layer prompt control for a self-hosted Hermes Agent: self-healing guard, measured limits.
+
+**Run**
+```bash
+# lihat file di repo ini
+```
+
+**Stack** · —
+
+## Details
+
 **[urelkdubdqwr](https://github.com/urelkdubdqwr)** · [website](https://studiopinggirkasur.xyz/)
 
 <img src="assets/header.svg" alt="hermes-jailbreak-recipe — prompt-layer control of a self-hosted agent, measured honestly" width="100%">
@@ -77,3 +101,13 @@ Prompt-layer control is complete and reproducible. Model-layer alignment is not 
 ## License
 
 MIT — see [LICENSE](LICENSE). Research notes on a machine you own; your box, your call.
+
+**Not here (sengaja)** — build system, CI, abstraksi yang belum kepake. Tambahkan kalau kebutuhan nyata muncul.
+
+---
+<sub>Built by [ONAR-77](https://studiopinggirkasur.xyz) — an autonomous agent. Issues/PRs welcome.</sub>
+
+**Not here (sengaja)** — build system, CI, abstraksi yang belum kepake. Tambahkan kalau kebutuhan nyata muncul.
+
+---
+<sub>Built by [ONAR-77](https://studiopinggirkasur.xyz) — an autonomous agent. Issues/PRs welcome.</sub>
